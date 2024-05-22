@@ -1,0 +1,67 @@
+div{
+    color:white;
+}
+
+.container{
+    width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: #cccccc;
+}
+
+.container::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+.red-box{
+    background-color: red;
+    float:left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;   /* cubic-bazier(0.31,0.27,0.32,1.67)*/
+}
+
+.red-box:hover{
+    background-color: blueviolet;
+    color:yellow;
+    width: 200px;
+}
+
+.green-box{
+    background-color: green;
+    /*position: sticky;    /*fixed는 화면상 sticky는 멈춤(내릴땐 그 위치에서 멈춤)*/
+    float:left;
+    transition-duration: 2s;
+    transition-delay: 3s;
+    transition-timing-function: ease-in-out;  /* cubic-bazier(0.31,0.27,0.32,1.67)*/
+    
+}
+
+.green-box:hover{
+    background-color: aqua;
+    width:200px;
+}
+
+.blue-box{
+    background-color: blue;
+    float: left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;   /* cubic-bazier(0.31,0.27,0.32,1.67)*/
+}
+
+.blue-box:hover{
+    background-color: coral;
+    width:200px;
+}
+
+img{
+    width : 100px;
+    height: auto;
+    float: right;
+}
